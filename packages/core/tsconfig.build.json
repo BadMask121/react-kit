@@ -1,0 +1,10 @@
+{
+	"extends": "../../tsconfig.build.json",
+	"exclude": ["**/*.test.tsx", "**/*.test.ts", "src/**/*/*.test.tsx"],
+	"compilerOptions": {
+		"outDir": "./build",
+		"jsx": "react",
+		"types": ["jest"]
+	},
+	"include": ["src", "src/**/*"]
+}

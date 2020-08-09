@@ -1,0 +1,61 @@
+{
+  "extends": "./tsconfig.build.json",
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "**/*.test.tsx",
+    "**/*.test.ts",
+    "src/**/*/*.test.tsx"
+  ],
+  "types": ["typePatches"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "index.d.ts",
+    "custom.d.ts",
+    "src",
+    "src/**/*",
+    "package.json"
+  ],
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "jsx": "react",
+    "outDir": "build",
+    "rootDir": ".",
+    "baseUrl": ".",
+
+    "paths": {
+      "@core/*": ["packages/*"]
+    },
+    "allowJs": true,
+    "composite": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": false,
+    "declaration": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "sourceMap": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "downlevelIteration": true,
+    "strictNullChecks": false,
+    "removeComments": true,
+    "types": []
+  }
+}

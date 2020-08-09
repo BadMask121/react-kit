@@ -1,0 +1,40 @@
+{
+	"exclude": [
+		"node_modules",
+		"build",
+		"scripts",
+		"acceptance-tests",
+		"webpack",
+		"jest",
+		"src/setupTests.ts",
+		"../node_modules",
+		"./node_modules",
+		"**/*.spec.ts",
+		"**/*.test.tsx",
+		"**/*.test.ts"
+	],
+	"references": [{ "path": "packages/" }],
+	"include": ["**/*.ts", "**/*.tsx", "index.d.ts", "custom.d.ts"],
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es5",
+		"sourceMap": true,
+		"outDir": "build",
+		"composite": true,
+		"esModuleInterop": true,
+		"jsx": "react",
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"isolatedModules": true,
+		"removeComments": true,
+		"skipLibCheck": true,
+		"noLib": false,
+		"moduleResolution": "node",
+		"downlevelIteration": true,
+		"experimentalDecorators": true,
+		"noImplicitAny": false,
+		"allowSyntheticDefaultImports": true,
+		"strictNullChecks": false,
+		"skipDefaultLibCheck": true,
+		"types": ["jest"]
+	}
+}
