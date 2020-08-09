@@ -1,6 +1,6 @@
 {
   "name": "@sdc/core",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "scripts": {
     "start": "react-app-rewired start",
@@ -25,5 +25,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "gitHead": "865343e82d4ede6dcbf318901f2f83c5d4017502"
 }
