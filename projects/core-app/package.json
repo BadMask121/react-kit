@@ -1,7 +1,7 @@
 {
-  "name": "@sdc/core",
+  "name": "core-app",
   "version": "0.1.3",
-  "private": false,
+  "private": true,
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
@@ -26,5 +26,8 @@
       "last 1 safari version"
     ]
   },
-  "gitHead": "c87a08194f39c8c7b35ccdf5d05504bfaa9d26e6"
+  "gitHead": "c87a08194f39c8c7b35ccdf5d05504bfaa9d26e6",
+  "dependencies": {
+    "worker-loader": "^3.0.1"
+  }
 }

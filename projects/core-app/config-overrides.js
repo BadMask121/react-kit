@@ -15,11 +15,6 @@ module.exports = (config, env) => {
   babelLoader.include = babelLoader.include.replace("/web/src", "");
   config.module.rules[2].oneOf[1] = babelLoader;
 
-  /**
-   *
-   *
-   * remeber to load tsx loader before worker loader
-   */
   return override(
     addWebpackModuleRule({
       test: /\.(tsx|ts)$/,
@@ -41,16 +36,6 @@ module.exports = (config, env) => {
       ],
     }),
     removeModuleScopePlugin(),
-    addWebpackModuleRule({
-      test: /\.(tsx|ts)$/,
-      use: [
-        {
-          loader: babelLoader.loader,
-          options: babelLoader.options,
-        },
-        // {loader: "awesome-typescript-loader"},
-      ],
-    }),
 
     dev && addBabelPlugin("react-refresh/babel"),
     dev &&

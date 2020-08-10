@@ -2,29 +2,17 @@ import "./App.css";
 
 import React from "react";
 
-import logo from "./logo.svg";
-
+import logo from "../public/logo.svg";
+import Route from "./routes";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {/* <BrowserRouter>
-					<Route
-						render={() => (
-							<React.Fragment>
-								<Layout 
-									renderSideBarChildren={() => <div>d</div>}
-								>
-									<div>dsad</div>
-								</Layout>
-							</React.Fragment>
-						)}
-					/>
-				</BrowserRouter> */}
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <Route />
         <a
           className="App-link"
           href="https://reactjs.org"

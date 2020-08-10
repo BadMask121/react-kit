@@ -3,7 +3,8 @@
   "compilerOptions": {
     "outDir": "./build",
     "composite": false,
-    "noEmit": true
+    "noEmit": true,
+    "isolatedModules": true
   },
   "include": [
     "**/*.ts",

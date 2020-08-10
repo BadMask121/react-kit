@@ -32,13 +32,14 @@
     "baseUrl": ".",
 
     "paths": {
-      "@core/*": ["packages/*"]
+      "@kit/core": ["packages/kit/src/*"]
     },
     "allowJs": true,
     "composite": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "skipDefaultLibCheck": true,
+    "isolatedModules": false,
     "allowSyntheticDefaultImports": true,
     "strict": false,
     "forceConsistentCasingInFileNames": false,
@@ -48,7 +49,6 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
     "sourceMap": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,

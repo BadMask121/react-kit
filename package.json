@@ -1,13 +1,12 @@
 {
-  "name": "react-typescript-boilplate",
-  "private": false,
+  "name": "react-kit",
+  "private": true,
   "scripts": {
     "build": "npm run clean && npm run compile",
     "clean": "rm -rf ./build",
     "compile": "lerna run build",
     "pub": "lerna publish --force-publish='*'",
-    "vendor": "yarn workspace @sdc/vendor",
-    "admin": "yarn workspace @sdc/admin",
+    "example": "yarn workspace core-app",
     "test": "lerna run test"
   },
   "dependencies": {
@@ -26,6 +25,7 @@
     "formik": "^2.1.4",
     "global": "^4.4.0",
     "lerna": "^3.22.1",
+    "node-sass": "^4.14.1",
     "promise.allsettled": "^1.0.2",
     "react": "^16.13.0",
     "react-app-rewired": "^2.1.5",
@@ -91,7 +91,8 @@
     "worker-loader": "^3.0.0"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "projects/*"
   ],
   "version": "1.1.2"
 }
