@@ -25,3 +25,14 @@ All your favourite react setup in one place, monorepo ready too !!!
 - run command `yarn example start` then visit url `http://localhost:3000` to start the example web app
 
 - to create a component under package run `yarn create <packagename>`
+
+### Building
+
+    - run `yarn build` to build packages
+
+Hack your way around, make it better by contributing
+
+### Todos
+
+- [ ] Folder structure documentation
+- [ ] Scripts for creating projects
