@@ -1,0 +1,41 @@
+{
+  "name": "@kit/core",
+  "version": "1.0.3",
+  "description": "> TODO: description",
+  "author": "Jeffrey Emakpor <jeffreyefemena4@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "./build/index",
+  "directories": {
+    ".": ".",
+    "*": "*",
+    "build": "build",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "build"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run compile && yarn postbuild",
+    "postbuild": "cpy '**/*' '!**/tsconfig.json' '!**/tslint.json' '!**/build' '!**/tsconfig.build.json' '!**/*.tsx' './build' --cwd=./ --no-overwrite --parents",
+    "clean": "rm -rf ./build",
+    "compile": "tsc -p tsconfig.build.json"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "gitHead": "d66b7bc856d857a55acb4453b83fb9ee428f6f7a"
+}
