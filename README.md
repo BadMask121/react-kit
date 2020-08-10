@@ -18,18 +18,10 @@ All your favourite react setup in one place, monorepo ready too !!!
 
 ## Installation
 
-- clone the repo (would publish to npm soon)
-- run `npm install`
-- run `cp .env.example .env` to copy the contents from `.env.example` to `.env` which would be created
-- configure `DB_HOST` in your newly created `.env` file
+- clone repo
 
-## Run
+- run `yarn`
 
-- simply run `npm run essential`
-- visit your application on http://localhost:3333 (you can specify you custom port in the `.env` file)
+- run command `yarn example start` then visit url `http://localhost:3000` to start the example web app
 
-![success](http://res.cloudinary.com/ichtrojan/image/upload/v1517161413/Screen_Shot_2018-01-28_at_6.42.21_PM_hbaskt.png)
-
-## Special Addition
-
-The Beautiful Gradients used was generated using [web Gradients](https://webgradients.com/?ref=producthunt) 🔥🔥🔥
+- to create a component under package run `yarn create <packagename>`

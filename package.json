@@ -5,8 +5,10 @@
     "build": "npm run clean && npm run compile",
     "clean": "rm -rf ./build",
     "compile": "lerna run build",
-    "pub": "lerna publish --force-publish='*'",
+    "pub": "lerna publish",
     "example": "yarn workspace core-app",
+    "create:package": "lerna create",
+    "create:kit": "sh -c 'lerna create ${0} kit'",
     "test": "lerna run test"
   },
   "dependencies": {
